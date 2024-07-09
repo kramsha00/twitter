@@ -1,4 +1,5 @@
 import "react-native-gesture-handler"; //Always keep at top
+import "./styles/global.css";
 
 //Screen and component imports
 import Home from "./screens/Home";
