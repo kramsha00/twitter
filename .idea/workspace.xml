@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4abb063-1447-4bf1-a297-10e2300213b1" name="Changes" comment="Tweet component style wip">
+    <list default="true" id="b4abb063-1447-4bf1-a297-10e2300213b1" name="Changes" comment="Design home page with initial design">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Tweet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Tweet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Style.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720543242385</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Nativewind config with babel">
+      <created>1720550769601</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720550769601</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +156,9 @@
     <MESSAGE value="Test page" />
     <MESSAGE value="Add general navigation and layout" />
     <MESSAGE value="Tweet component style wip" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tweet component style wip" />
+    <MESSAGE value="Nativewind config with babel" />
+    <MESSAGE value="Design home page with initial design" />
+    <option name="LAST_COMMIT_MESSAGE" value="Design home page with initial design" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
