@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4abb063-1447-4bf1-a297-10e2300213b1" name="Changes" comment="Add general navigation and layout">
-      <change afterPath="$PROJECT_DIR$/styles/Style.tsx" afterDir="false" />
+    <list default="true" id="b4abb063-1447-4bf1-a297-10e2300213b1" name="Changes" comment="Tweet component style wip">
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Tweet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Tweet.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +103,7 @@
       <updated>1720494336437</updated>
       <workItem from="1720494337743" duration="1013000" />
       <workItem from="1720495385864" duration="17389000" />
-      <workItem from="1720541634397" duration="1320000" />
+      <workItem from="1720541634397" duration="4403000" />
     </task>
     <task id="LOCAL-00001" summary="Test page">
       <created>1720521260491</created>
@@ -118,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720530768094</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Tweet component style wip">
+      <created>1720543242385</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720543242385</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +136,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Test page" />
     <MESSAGE value="Add general navigation and layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add general navigation and layout" />
+    <MESSAGE value="Tweet component style wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tweet component style wip" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
