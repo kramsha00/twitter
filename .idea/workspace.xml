@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4abb063-1447-4bf1-a297-10e2300213b1" name="Changes" comment="Test page">
-      <change afterPath="$PROJECT_DIR$/screens/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/NewTweet.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/Notifications.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/Profile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/Search.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/Settings.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/ViewTweet.tsx" afterDir="false" />
+    <list default="true" id="b4abb063-1447-4bf1-a297-10e2300213b1" name="Changes" comment="Add general navigation and layout">
+      <change afterPath="$PROJECT_DIR$/styles/Style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Tweet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Tweet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,31 +49,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/ramsha/Desktop/twitter/screens",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/opt/homebrew/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "ts.external.directory.path": "/Users/ramsha/Desktop/twitter/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ramsha/Desktop/twitter/screens&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/opt/homebrew/lib/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/ramsha/Desktop/twitter/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/screens" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/components" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -90,7 +101,8 @@
       <option name="presentableId" value="Default" />
       <updated>1720494336437</updated>
       <workItem from="1720494337743" duration="1013000" />
-      <workItem from="1720495385864" duration="7480000" />
+      <workItem from="1720495385864" duration="17389000" />
+      <workItem from="1720541634397" duration="1320000" />
     </task>
     <task id="LOCAL-00001" summary="Test page">
       <created>1720521260491</created>
@@ -99,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720521260491</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add general navigation and layout">
+      <created>1720530768094</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720530768094</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,7 +127,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Test page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test page" />
+    <MESSAGE value="Add general navigation and layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add general navigation and layout" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

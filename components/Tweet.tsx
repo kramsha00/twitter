@@ -1,29 +1,32 @@
-import * as React from "react"
-import {FlatList, StyleSheet, Text, View} from "react-native";
+import * as React from "react";
+import { FlatList, Text, View, Image } from "react-native";
+import styles from "../styles/Style";
 
-const tweetItem = ({item}) => <View style={styles.tweet}>
-	<Text style={styles.text}> {item.data.title} </Text>
-</View>
+const tweetItem = ({ item }) => (
+  <View style={styles.tweetContainer}>
+    <Image
+      source={{
+        uri: "https://reactnative.dev/img/tiny_logo.png",
+      }}
+      style={styles.avatar}
+    />
+    <View style={styles.tweetBody}>
+      <Text> {item.title} </Text>
+      <Text> some description for now </Text>
+      <View style={styles.iconContainer}></View>
+    </View>
+  </View>
+);
 
 const TweetsList = (props) => (
-	<View>
-		<FlatList
-			data={props.data}
-			renderItem={tweetItem}
-			keyExtractor={item => item.data.id}
-		/>
-	</View>
-)
-export default TweetsList
+  <View style={styles.container}>
+    <FlatList
+      style={styles.tweetList}
+      data={props.data}
+      renderItem={tweetItem}
+      keyExtractor={(item) => item.id}
+    />
+  </View>
+);
 
-const styles = StyleSheet.create({
-	text: {
-		color: '#da8ae0',
-	},
-	tweet: {
-		backgroundColor: '#ddd',
-		padding: 5,
-		margin: 5,
-		flexDirection: "row"
-	}
-});
+export default TweetsList;

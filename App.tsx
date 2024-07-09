@@ -66,7 +66,7 @@ const TabNavigation = () => {
         component={Home}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="home" size={size} color="{color}" />
+            <Ionicons name="home" size={size} color={color} />
           ),
         }}
       />
@@ -75,7 +75,7 @@ const TabNavigation = () => {
         component={Search}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="search" size={size} color="{color}" />
+            <Ionicons name="search" size={size} color={color} />
           ),
         }}
       />
@@ -84,7 +84,7 @@ const TabNavigation = () => {
         component={Notifications}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="notifications" size={size} color="{color}" />
+            <Ionicons name="notifications" size={size} color={color} />
           ),
         }}
       />
