@@ -21,20 +21,21 @@ function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <TweetsList data={DATA}></TweetsList>
-      {/*<Button*/}
-      {/*  title={"New tweet"}*/}
-      {/*  onPress={() => navigation.navigate("NewTweet")}*/}
-      {/*></Button>*/}
+      <Button
+        title={"New tweet"}
+        onPress={() => navigation.navigate("NewTweet")}
+      ></Button>
 
-      {/*<Button*/}
-      {/*  title={"Profile"}*/}
-      {/*  onPress={() => navigation.navigate("Profile")}*/}
-      {/*></Button>*/}
+      <Button
+        className="text-red-400"
+        title={"Profile"}
+        onPress={() => navigation.navigate("Profile")}
+      ></Button>
 
-      {/*<Button*/}
-      {/*  title={"View tweet"}*/}
-      {/*  onPress={() => navigation.navigate("ViewTweet")}*/}
-      {/*></Button>*/}
+      <Button
+        title={"View tweet"}
+        onPress={() => navigation.navigate("ViewTweet")}
+      ></Button>
     </View>
   );
 }

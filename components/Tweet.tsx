@@ -2,10 +2,6 @@ import * as React from "react";
 
 import { FlatList, Text, View, Image } from "react-native";
 import styles from "../styles/Style";
-import { styled } from "nativewind";
-
-const StyledView = styled(View);
-const StyledText = styled(Text);
 
 const tweetItem = ({ item }) => (
   <View style={styles.tweetContainer}>
@@ -16,10 +12,8 @@ const tweetItem = ({ item }) => (
       style={styles.avatar}
     />
     <View style={styles.tweetBody}>
-      <StyledText className="text-lg font-medium text-blue-800">
-        {item.title}
-      </StyledText>
-      <Text className="text-red-400">some description for now</Text>
+      <Text className="text-lg text-slate-700 font-semibold">{item.title}</Text>
+      <Text className="text-slate-600">some description for now</Text>
       <View style={styles.iconContainer}></View>
     </View>
   </View>
