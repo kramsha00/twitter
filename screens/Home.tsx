@@ -28,7 +28,7 @@ let Tweets: Tweet[] = [
       "Ut ut accumsan urna.",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1603029084766-3ddc1c5c7e94?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        url: "https://images.unsplash.com/photo-1685450127565-d07f2377fbc2?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         altText: "Image 1 description",
       },
       {
@@ -38,10 +38,6 @@ let Tweets: Tweet[] = [
       {
         url: "https://images.unsplash.com/photo-1603029084766-3ddc1c5c7e94?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         altText: "Image 1 description",
-      },
-      {
-        url: "https://images.unsplash.com/photo-1544194215-541c2d3561a4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        altText: "Image 2 description",
       },
     ],
   },
@@ -78,6 +74,16 @@ let Tweets: Tweet[] = [
     content:
       "Nunc ac turpis porttitor, sollicitudin eros vel, orn are tortor. " +
       "Ut neque velit, semper eget rhoncus ut, volutpat in quam.",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1603029084766-3ddc1c5c7e94?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        altText: "Image 1 description",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1544194215-541c2d3561a4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        altText: "Image 2 description",
+      },
+    ],
   },
   {
     id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28bg",
@@ -88,6 +94,12 @@ let Tweets: Tweet[] = [
       "Ut blandit est augue, ut commodo diam aliquet sed. " +
       "Phasellus non neque at lorem semper egestas." +
       "Ut ut accumsan urna.",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1603029084766-3ddc1c5c7e94?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        altText: "Image 1 description",
+      },
+    ],
   },
 ];
 
