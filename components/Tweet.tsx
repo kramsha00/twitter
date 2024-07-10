@@ -30,7 +30,7 @@ const TweetItem = ({ item, navigation }) => {
         </TouchableOpacity>
         <TouchableOpacity
           style={{ flexShrink: 1 }}
-          onPress={() => navigation.navigate("ViewTweet")}
+          onPress={() => navigation.navigate("ViewTweet", { item: item })}
         >
           <Text className="text-slate-600 text-wrap">{item.content}</Text>
         </TouchableOpacity>
@@ -62,7 +62,7 @@ const TweetItem = ({ item, navigation }) => {
           <TouchableOpacity>
             <View className="flex flex-row text-slate-400">
               <EvilIcons name="heart" size={24} color="gray" />
-              <Text className="text-sm text-slate-400">1563</Text>
+              <Text className="text-sm text-slate-400">1,563</Text>
             </View>
           </TouchableOpacity>
           <TouchableOpacity>
