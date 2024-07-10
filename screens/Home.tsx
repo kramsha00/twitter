@@ -2,19 +2,7 @@ import React from "react";
 import { View, StyleSheet, TouchableOpacity } from "react-native";
 import TweetsList from "../components/Tweet";
 import { Feather } from "@expo/vector-icons";
-
-interface Tweet {
-  id: string;
-  title: string;
-  username: string;
-  content?: string;
-  images?: Image[];
-}
-
-interface Image {
-  url: string;
-  altText: string;
-}
+import { Tweet } from "../types";
 
 let Tweets: Tweet[] = [
   {

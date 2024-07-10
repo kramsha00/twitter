@@ -1,6 +1,7 @@
-import "react-native-gesture-handler"; //Always keep at top
+import "react-native-gesture-handler"; // Always keep at top
+import React from "react";
 
-//Screen and component imports
+// Screen and component imports
 import Home from "./screens/Home";
 import NewTweet from "./screens/NewTweet";
 import Profile from "./screens/Profile";
@@ -9,25 +10,41 @@ import Settings from "./screens/Settings";
 import Search from "./screens/Search";
 import Notifications from "./screens/Notifications";
 
-//Navigation imports
-import { NavigationContainer } from "@react-navigation/native";
+// Navigation imports
+import {
+  NavigationContainer,
+  getFocusedRouteNameFromRoute,
+} from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import { Ionicons } from "@expo/vector-icons";
 
-//Constants
+// Constants
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
-const HomeStackNavigation = () => {
+const HomeStackNavigation = ({ navigation, route }) => {
+  React.useLayoutEffect(() => {
+    const routeName = getFocusedRouteNameFromRoute(route);
+    if (
+      routeName === "NewTweet" ||
+      routeName === "Profile" ||
+      routeName === "ViewTweet"
+    ) {
+      navigation.setOptions({ headerShown: false });
+    } else {
+      navigation.setOptions({ headerShown: true });
+    }
+  }, [navigation, route]);
+
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: true,
         headerBackTitleVisible: false,
+        headerMode: "screen",
       }}
     >
       <Stack.Screen
@@ -43,7 +60,7 @@ const HomeStackNavigation = () => {
       <Stack.Screen
         name="Profile"
         component={Profile}
-        options={{ title: "" }}
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="ViewTweet"
@@ -53,6 +70,7 @@ const HomeStackNavigation = () => {
     </Stack.Navigator>
   );
 };
+
 const TabNavigation = () => {
   return (
     <Tab.Navigator

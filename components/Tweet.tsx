@@ -1,10 +1,18 @@
 import * as React from "react";
 
-import { FlatList, Text, View, Image, TouchableOpacity } from "react-native";
-import styles from "../styles/Style";
+import {
+  FlatList,
+  Text,
+  View,
+  Image,
+  TouchableOpacity,
+  StyleSheet,
+} from "react-native";
+// import styles from "../styles/Style";
 import { EvilIcons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
+import { useEffect } from "react";
 
 const TweetItem = ({ item, navigation }) => {
   return (
@@ -83,6 +91,12 @@ const TweetsList = (props) => {
     <TweetItem item={item} navigation={navigation} />
   );
 
+  useEffect(() => {
+    console.log("TweetsList received data:", props.data);
+  }, [props.data]);
+
+  console.log("Rendering TweetsList component");
+
   return (
     <View style={styles.container}>
       <FlatList
@@ -96,3 +110,47 @@ const TweetsList = (props) => {
 };
 
 export default TweetsList;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "white",
+  },
+  tweetContainer: {
+    width: "100%",
+    flexDirection: "row",
+    borderBottomWidth: 1,
+    borderBottomColor: "#e5e7eb",
+    padding: 10,
+  },
+  tweetBody: {
+    flexShrink: 1,
+    flexDirection: "column",
+    marginHorizontal: 10,
+    paddingRight: 10,
+  },
+  iconContainer: {
+    flexDirection: "row",
+    marginTop: 10,
+    justifyContent: "space-between",
+  },
+  tweetList: {
+    marginHorizontal: 5,
+  },
+  avatar: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+  },
+  imageContainer: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    marginVertical: 10,
+  },
+  tweetImage: {
+    width: 100,
+    height: 100,
+    margin: 5,
+    borderRadius: 8,
+  },
+});
